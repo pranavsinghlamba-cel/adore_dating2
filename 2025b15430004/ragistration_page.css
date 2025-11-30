@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: pink;
+}
+
+.ragis_logo{
+    /* width: 500px; */
+    height: 30px;
+    /* background-color:rgb(110, 3, 3); */
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.main0{
+    
+    width: 100%;
+    height: 99dvb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(136, 24, 43);
+
+}
+label{
+    background-color: #ffffff62;
+}
+.main1{
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(236, 5, 147, 0.932);
+    width: 500px;
+    height: 600px;
+
+
+}
+
+.logo2{
+    width: 150px;
+    background:transparent;
+
+
+}
+
+input{
+   background-color: #c2bcbc;
+   padding: 10px;
+   padding-right: 5px;
+   border-radius: 7px;
+   border: 5px;
+   border-color: #15141448;
+   margin-right: 5px;
+   margin-left: 5px;
+   margin-bottom: 20px;
+}
+
+.labell{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+    width: 500px;
+
+}
+button{
+     width: 300px;
+    height: 35px;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+
+
+.ragis_button{
+    width: 300px;
+    height: 35px;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+
+
+
+}
+button{
+    width: 300px;
+    background-color: rgb(234, 14, 14);
+    border: 0;
+    border-radius: 10px;
+    font-size: 20px;
+
+
+}
+
+select{
+     background-color: #c2bcbc;
+   padding: 10px;
+   padding-right: 5px;
+   border-radius: 7px;
+   border: 5px;
+   border-color: #15141448;
+   margin-right: 5px;
+   margin-left: 5px;
+   margin-bottom: 20px;
+    
+}

@@ -1,0 +1,40 @@
+.dating2{
+   /* color: black; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 200px;
+
+}
+
+#looking1{
+   background-color: #058dc2;
+   margin-right: 30px;
+   /* height: 30px; */
+   width: 150px;
+   border: 0px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+#looking2{
+   background-color: #d867a5;
+   height: 30px;
+   width: 150px;
+   border: 0px;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#looking{
+   display: flex;
+   flex-direction: row;
+   margin-top: 20px;
+}
+

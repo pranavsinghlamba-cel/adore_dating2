@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            width: 99vw;
+            height: 99vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 100px;
+            height: 100px;
+            background-color: bisque;
+        }
+        .m2{
+            width: 200px;
+            height : 200px;
+            background-color: aqua;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="m2"></div>
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky P Tag Example</title>
+    <style>
+        .container {
+            height: 1000px; /* Ensure sufficient height for the parent div */
+            border: 1px solid blue;
+            padding: 20px;
+        } -->
+        <!-- .sticky-paragraph {
+            position: sticky;
+            top: 50px; /* Sticks 50px from the top of its container */
+            background-color: lightgreen;
+            padding: 10px;
+            border: 1px solid green;
+        }
+
+        .content-filler {
+            height: 500px; /* Add content to enable scrolling */
+            background-color: lightgray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Some introductory text before the sticky paragraph.</p>
+        <p class="sticky-paragraph">This paragraph will stick!</p>
+        <p>More text after the sticky paragraph.</p>
+        <div class="content-filler">
+            Scroll down to see the sticky effect in action.
+        </div>
+        <p>Even more content at the bottom of the container.</p>
+    </div>
+</body>
+</html> */ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Interview Simulator</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #eef1f6;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: #4a6cf7;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 750px;
+        margin: 30px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+    }
+
+    .screen {
+        display: none;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    /* show current screen */
+    #s1:checked ~ .content #screen1,
+    #s2:checked ~ .content #screen2,
+    #s3:checked ~ .content #screen3,
+    #s4:checked ~ .content #screen4,
+    #s5:checked ~ .content #screen5,
+    #s6:checked ~ .content #screen6 {
+        display: block;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 2px solid #ccc;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background: #4a6cf7;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    .btn:hover {
+        background: #2f4bd8;
+    }
+
+    .title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+</head>
+
+<body>
+
+<header>AI Interview Simulator</header>
+
+<!-- Hidden Radio Buttons for Navigation -->
+<input type="radio" name="step" id="s1" checked>
+<input type="radio" name="step" id="s2">
+<input type="radio" name="step" id="s3">
+<input type="radio" name="step" id="s4">
+<input type="radio" name="step" id="s5">
+<input type="radio" name="step" id="s6">
+
+<div class="content">
+
+    <!-- Screen 1 -->
+    <div class="container screen" id="screen1">
+        <div class="title">Welcome to the AI Interview Simulator</div>
+        <p>This simulator will walk you through a set of interview questions.  
+        Please answer honestly.</p>
+        <label class="btn" for="s2">Start Interview</label>
+    </div>
+
+    <!-- Screen 2 -->
+    <div class="container screen" id="screen2">
+        <div class="title">Q1: Tell me about yourself.</div>
+        <textarea placeholder="Type your answer here..."></textarea>
+        <label class="btn" for="s3">Next</label>
+    </div>
+
+    <!-- Screen 3 -->
+    <div class="container screen" id="screen3">
+        <div class="title">Q2: Why do you want this job?</div>
+        <textarea placeholder="Type your answer here..."></textarea>
+        <label class="btn" for="s4">Next</label>
+    </div>
+
+    <!-- Screen 4 -->
+    <div class="container screen" id="screen4">
+        <div class="title">Q3: What are your strengths?</div>
+        <textarea placeholder="Type your answer here..."></textarea>
+        <label class="btn" for="s5">Next</label>
+    </div>
+
+    <!-- Screen 5 -->
+    <div class="container screen" id="screen5">
+        <div class="title">Q4: Describe a challenge you solved.</div>
+        <textarea placeholder="Type your answer here..."></textarea>
+        <label class="btn" for="s6">Finish</label>
+    </div>
+
+    <!-- Screen 6 -->
+    <div class="container screen" id="screen6">
+        <div class="title">Interview Completed</div>
+        <p>Thank you for completing the AI Interview Simulator.</p>
+        <p>Your responses have been recorded.</p>
+        <label class="btn" for="s1">Restart</label>
+    </div>
+
+</div>
+
+</body>
+</html>
